@@ -17,8 +17,8 @@ app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
 });
 
-app.get("/messages", (req, res) => {
-  res.send("Hello from server");
+app.get("/", (req, res) => {
+  res.send("<h1>Hello from server.</h1>");
 });
 
 app.use('/books', bookRoute);
