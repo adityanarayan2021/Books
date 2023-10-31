@@ -26,7 +26,7 @@ Content-Type: application/json
     "author": "Aditya Narayan",
     "summary": "This is a new book for testing"
 }
-.
+
 **Endpoint: `https://books-eysv.onrender.com/books/getAllBooks` (GET)**
 
 -Retrieve a list of all available books in the library.
@@ -58,6 +58,12 @@ Host: books-eysv.onrender.com
 ```http
 PUT /books/updateBookDetails/65406e0c3e5176ff4f7d3c1d
 Host: https://books-eysv.onrender.com
+Content-Type: application/json
+{
+    "title": "update Book ",
+    "author": "James Rowling",
+    "summary": "This is a new book for testing"
+}
 
 **Endpoint: `https://books-eysv.onrender.com/books/deleteBookById/{bookId}` (DELETE)**
 
