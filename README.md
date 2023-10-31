@@ -10,7 +10,6 @@ This is Books Management where we can add new book, get all books, get books spe
 
 ## EndPoints
 
-To use this project, follow these steps:
 **Endpoint: `https://books-eysv.onrender.com/books/addNewBook` (POST)**
 
 Add a new book to the library.
@@ -18,7 +17,7 @@ Add a new book to the library.
 **Request Example:**
 
 ```http
-POST /books/addNewBook HTTP/1.1
+POST /books/addNewBook
 Host: books-eysv.onrender.com
 Content-Type: application/json
 
@@ -28,3 +27,45 @@ Content-Type: application/json
     "summary": "This is a new book for testing"
 }
 .
+**Endpoint: `https://books-eysv.onrender.com/books/getAllBooks` (GET)**
+
+Retrieve a list of all available books in the library.
+
+**Request Example:**
+
+```http
+GET /books/getAllBooks
+Host: books-eysv.onrender.com
+
+
+**Endpoint: `https://books-eysv.onrender.com/books/getBookById/:id` (GET)**
+
+Retrieve a specific book from the library by providing its `id` as a parameter.
+
+**Request Example:**
+
+```http
+GET /books/getBookById/65406e0c3e5176ff4f7d3c1d
+Host: books-eysv.onrender.com
+
+
+**Endpoint: `https://books-eysv.onrender.com/books/updateBookDetails/{id}` (PUT)**
+
+Update book details by providing the `bookId` in the URL.
+
+**Request Example:**
+
+```http
+PUT /books/updateBookDetails/65406e0c3e5176ff4f7d3c1d
+Host: https://books-eysv.onrender.com
+
+**Endpoint: `https://books-eysv.onrender.com/books/deleteBookById/{bookId}` (DELETE)**
+
+Delete a book by providing the `bookId` in the URL.
+
+**Request Example:**
+
+```http
+DELETE /books/deleteBookById/65406e0c3e5176ff4f7d3c1d HTTP/1.1
+Host: https://books-eysv.onrender.com
+
