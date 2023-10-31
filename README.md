@@ -29,7 +29,7 @@ Content-Type: application/json
 .
 **Endpoint: `https://books-eysv.onrender.com/books/getAllBooks` (GET)**
 
-Retrieve a list of all available books in the library.
+-Retrieve a list of all available books in the library.
 
 **Request Example:**
 
@@ -40,7 +40,7 @@ Host: books-eysv.onrender.com
 
 **Endpoint: `https://books-eysv.onrender.com/books/getBookById/:id` (GET)**
 
-Retrieve a specific book from the library by providing its `id` as a parameter.
+-Retrieve a specific book from the library by providing its `id` as a parameter.
 
 **Request Example:**
 
@@ -51,7 +51,7 @@ Host: books-eysv.onrender.com
 
 **Endpoint: `https://books-eysv.onrender.com/books/updateBookDetails/{id}` (PUT)**
 
-Update book details by providing the `bookId` in the URL.
+-Update book details by providing the `bookId` in the URL.
 
 **Request Example:**
 
@@ -61,11 +61,11 @@ Host: https://books-eysv.onrender.com
 
 **Endpoint: `https://books-eysv.onrender.com/books/deleteBookById/{bookId}` (DELETE)**
 
-Delete a book by providing the `bookId` in the URL.
+-Delete a book by providing the `bookId` in the URL.
 
 **Request Example:**
 
 ```http
-DELETE /books/deleteBookById/65406e0c3e5176ff4f7d3c1d HTTP/1.1
+DELETE /books/deleteBookById/65406e0c3e5176ff4f7d3c1d
 Host: https://books-eysv.onrender.com
 
